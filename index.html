@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="login-page">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button id="login-button">Login</button>
+        <p id="login-error" class="error hidden">Invalid username or password</p>
+    </div>
+    <div id="main-page" class="hidden">
+        <div id="user-info">
+            <span id="username-display"></span>
+            <button id="logout-button">Logout</button>
+        </div>
+        <h2>Invoices</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Invoice Name</th>
+                    <th>Paid Date</th>
+                    <th>Total Amount</th>
+                </tr>
+            </thead>
+            <tbody id="invoices-list">
+            </tbody>
+        </table>
+        <h3>Invoice Lines</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price Per Unit</th>
+                    <th>Quantity</th>
+                    <th>Total Amount</th>
+                </tr>
+            </thead>
+            <tbody id="invoice-lines-list">
+            </tbody>
+        </table>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
